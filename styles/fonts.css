@@ -1,0 +1,14 @@
+@font-face {
+  font-family:'sen' ;
+  src: url(../assets/font/Sen-Regular.ttf);
+}
+
+@font-face {
+  font-family:'inter' ;
+  src: url(../assets/font/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family:'poppins' ;
+  src: url(../assets/font/Poppins-Regular.ttf);
+}

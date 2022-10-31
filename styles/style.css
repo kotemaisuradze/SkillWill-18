@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+body {
+  background-color: #FAF8ED;
+  height: 100vh;
+}
+
+.header {
+  min-width: 1460px;
+  padding: 24px 135px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 136px;
+}
+
+.logo-and-nav {
+  display: flex;
+  gap: 72px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-logo span {
+  Font-family: 'sen';
+  Font-style: Bold;
+  Font-size: 2em;
+  font-weight: 700;
+  Line-height: 20px;
+  color: #2D3134;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.navigation a {
+  Font-family: 'poppins';
+  Font-size: 1.6em;
+  Line-height: 16px;
+  color: #2E476B;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  min-width: 170px;
+  min-height: 54px;
+  border-color: #F66F4D;
+  border-radius: 27px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.button span {
+  Font-family: 'poppins';
+  Font-style: Medium;
+  Font-size: 1.6em;
+  Line-height: 1.6em;
+  color:#F66F4D;
+  margin-right: 6px;
+}
+
+.button img {
+  width: 16px;
+  height: 15px;
+}
+
+.main {
+  min-width: 1460px;
+  padding: 0 135px;
+  margin-bottom: 84px;
+}
+
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 51px;
+}
+
+.main-title h1 {
+  Font-family: 'inter';
+  Font-style:  Bold;
+  Font-size: 5.6em;
+  font-weight: 600;
+  Line-height: 66px;
+  color: #2D3134;
+}
+
+.main-title span {
+  Font-family: 'inter';
+  Font-size: 1.6em;
+  font-weight: 400;
+  Line-height: 16px;
+  color: #5B5F62;
+}
+
+.buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.buttons button {
+  width: 92px;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 60px;
+  background-color: white;
+  Font-family: 'poppins';
+  Font-size: 1.4em;
+  font-weight: 400;
+  Line-height: 14px;
+  color: #2D3134;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.buttons button:hover {
+  background-color: #2D3134;
+  color: white;
+}
+
+
+.main-image-grid {
+  display: grid;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-template-areas:  "a a a c c c c d d d d d"
+                        "b b b c c c c m m n n n";
+   justify-items: center;
+   align-items: center;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.m {
+  grid-area: m;
+}
+
+.n {
+  grid-area: n;
+}
+
+
+.grid span, h4, h5 {
+  position: absolute;
+}
+
+.grid {
+  position: relative;
+}
+.grid span {
+  display: flex;
+  top: 24px;
+  left: 24px;
+  font-family: 'inter';
+  font-weight: 500;
+  font-size: 14px;
+  width: 42px;
+  height: 24px;
+  background: #FFFFFF;
+  color: #2D3134;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.grid span:hover {
+  color: white;
+  background-color: black ;
+}
+
+.grid h4 {
+  bottom: 48px;
+  left: 24px;
+  font-family: 'inter';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+}
+
+.grid h5 {
+  bottom: 24px;
+  left: 24px;
+  font-family: 'inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+}
+
+.footer {
+  min-width: 1460px;
+  position: relative;
+  display: flex;
+  padding: 0 135px;
+}
+
+.footer-start {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-right: 275px;
+  width: 140px;
+}
+
+.footer-start span {
+  Font-family: 'inter';
+  Font-size: 1.6em;
+  font-weight: 400;
+  Line-height: 26px;
+  color:  #5B5F62;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-logo span {
+  Font-family: 'sen';
+  Font-style: Bold;
+  Font-size: 2em;
+  font-weight: 700;
+  Line-height: 20px;
+  color: #2D3134;
+}
+
+.footer-end {
+  display: flex;
+  gap: 114px;
+  margin-bottom: 55px;
+}
+
+.list h3 {
+  Font-family: 'inter';
+  Font-size: 1.8em;
+  font-weight: 500;
+  Line-height: 18px;
+  color: #2D3134;
+  margin-bottom: 23px;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  list-style-type: none
+}
+
+.list ul li {
+  Font-family: 'inter';
+  Font-size: 1.4em;
+  font-weight: 400;
+  Line-height: 34px;
+  color: #676A6C;
+}
+
+
